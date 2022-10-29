@@ -1,0 +1,161 @@
+
+
+  collections imlemnetaion in java
+
+           
+       1_ Arraylist in java is that  store data in every data types
+       import java.util.*;  
+class Collection{  
+public static void main(String args[]){  
+ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
+list.add("Sami");//Adding object in arraylist  
+list.add("Salma");  
+list.add("Samsor");  
+list.add("Ahmad");  
+
+Iterator itr=list.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+}  
+}  
+
+2_ linked lists it is collection of nodes each node is created from two parts data and next adress.
+
+import java.util.*;  
+public class Link_collection{  
+public static void main(String args[]){  
+LinkedList<Object> ol=new LinkedList<Object>();  
+ol.add("Sami");  
+ol.add(10);  
+ol.add(a);  
+0l.add("cs");  
+Iterator<Object> itr=al.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+}  
+}  
+   
+   3_Vector is store data in face of vector
+import java.util.*;  
+public class Vector_collection{  
+public static void main(String args[]){  
+Vector<String> v=new Vector<String>();  
+v.add("Khalil");  
+v.add("Khatima");  
+v.add("Salma");  
+v.add("Hella");  
+v.add("Walid"); 
+v.add("Ahmad"); 
+Iterator<String> itr=v.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+}  
+}  
+
+4_stack is subclass of vector its lifo data structure stack have three functions
+import java.util.*;  
+public class S_collection{  
+public static void main(String args[]){  
+Stack<String> stack = new Stack<String>();  
+stack.push("push");  
+stack.push("peeck");  
+stack.push("Stack");  
+stack.push("Lifo");  
+stack.push("Insert");  
+stack.pop();  
+Iterator<String> itr=stack.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+}  
+}  
+
+
+5_Queue Interface
+Queue interface maintains the first-in-first-out order: we can to add and remove elements just from one side
+
+Queue priority:
+import java.util.*;  
+public class TestJavaCollection5{  
+public static void main(String args[]){  
+PriorityQueue<String> queue=new PriorityQueue<String>();  
+queue.add("Afghanistan");  
+queue.add("Pakistan");  
+queue.add("India");  
+queue.add("Bangladis");  
+
+System.out.println("iterating the queue elements:");  
+Iterator itr=queue.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+queue.remove();  // it will be remove elements from queue
+queue.poll();  
+System.out.println("after removing two elements:");  
+Iterator<String> itr2=queue.iterator();  
+while(itr2.hasNext()){  
+System.out.println(itr2.next());  
+}  
+}
+5_Deque Interface
+Deque interface extends the Queue interface. In Deque, we can remove and add the elements from both the side. Deque stands for a double-ended queue which enables us to perform the operations at both the ends.  
+  import java.util.*;  
+public class TestJavaCollection6{  
+public static void main(String[] args) {  
+//Creating Deque and adding elements  
+Deque<String> deque = new ArrayDeque<String>();  
+deque.add("Hezbullah");  
+deque.add("Samak");  
+deque.add("Sami");  
+deque.add("Allah dad");  
+//Traversing elements  
+for (String str : deque) {  
+System.out.println(str);  
+}  
+}  
+
+6_Set Interface
+Set Interface in Java is present in java.util package. It extends the Collection interface. It represents the unordered set of elements which doesn't allow us to store the duplicate items. We can store at most one null value in Set. Set is implemented by HashSet, LinkedHashSet, and TreeSet.
+
+Set can be instantiated as:
+
+Set<data-type> s1 = new HashSet<data-type>();  
+Set<data-type> s2 = new LinkedHashSet<data-type>();  
+Set<data-type> s3 = new TreeSet<data-type>();  
+
+======================================================
+import java.util.*;  
+public class TestJavaCollection7{  
+public static void main(String args[]){  
+  // it will be create set
+HashSet<String> set=new HashSet<String>();  
+set.add("Set");  
+set.add("Linkedlist");  
+set.add("Hashmap");  
+set.add("Map");  
+ //we will be see its data
+Iterator<String> itr=set.iterator();  
+while(itr.hasNext()){  
+System.out.println(itr.next());  
+}  
+}  
+
+ 
+}
+7 Map
+_import java.util.*;  
+class MapInterfaceExample{  
+ public static void main(String args[]){  
+  Map<Integer,String> map=new HashMap<Integer,String>();  
+  map.put(100,"Kandahar");  
+  map.put(101,"Kabul");  
+  map.put(102,"Wardak");  
+  map.put(104,"Ningerhar");
+  for(Map.Entry m:map.entrySet()){  
+   System.out.println(m.getKey()+" "+m.getValue());  
+  }  
+ }  
+}   
